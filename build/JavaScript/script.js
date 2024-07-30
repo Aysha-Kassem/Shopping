@@ -93,7 +93,7 @@ function AllProduct(product) {
     document.getElementById("beauty").innerHTML += `
       <div class="grid gap-10 w-44 border rounded-md p-5 text-xs">
         <div class="grid gap-3">
-          <div onclick="productpage(${product.id})"><img src="${product.images}" alt=""></div>
+          <div onclick="productpage(${product.id})"><img src="${product.images[0]}" alt=""></div>
           <div class="grid justify-center items-center gap-7">
             <div>
               <h3 class="font-bold">${product.title}</h3>
@@ -111,7 +111,7 @@ function AllProduct(product) {
     document.getElementById("fragrances").innerHTML += `
       <div class="grid gap-10 w-44 border rounded-md p-5 text-xs">
         <div class="grid gap-3">
-          <div onclick="productpage(${product.id})"><img src="${product.images}" alt=""></div>
+          <div onclick="productpage(${product.id})"><img src="${product.images[0]}" alt=""></div>
           <div class="grid justify-center items-center gap-7">
             <div>
               <h3 class="font-bold">${product.title}</h3>
@@ -129,7 +129,7 @@ function AllProduct(product) {
     document.getElementById("furniture").innerHTML += `
       <div class="grid gap-10 w-44 border rounded-md p-5 text-xs">
         <div class="grid gap-3">
-          <div onclick="productpage(${product.id})"><img src="${product.images}" alt=""></div>
+          <div onclick="productpage(${product.id})"><img src="${product.images[0]}" alt=""></div>
           <div class="grid justify-center items-center gap-7">
             <div>
               <h3 class="font-bold">${product.title}</h3>
@@ -147,7 +147,7 @@ function AllProduct(product) {
     document.getElementById("groceries").innerHTML += `
       <div class="grid gap-10 w-44 border rounded-md p-5 text-xs">
         <div onclick="productpage(${product.id})" class="grid gap-3">
-          <div><img src="${product.images}" alt=""></div>
+          <div><img src="${product.images[0]}" alt=""></div>
           <div class="grid justify-center items-center gap-7">
             <div>
               <h3 class="font-bold">${product.title}</h3>
@@ -167,7 +167,7 @@ function AllProduct(product) {
       <div class="grid gap-10 w-44 border rounded-md p-5 text-xs">
         <div class="grid gap-3">
           <div onclick="productpage(${product.id})" ><img src="${
-      product.images
+      product.images[0]
     }" alt=""></div>
           <div class="grid justify-center items-center gap-7">
             <div>
